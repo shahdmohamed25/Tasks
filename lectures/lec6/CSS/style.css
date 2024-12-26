@@ -1,0 +1,72 @@
+.d1{
+    width: 550px;
+    text-align: start;
+    margin: auto;
+    height: 300px;
+    border: 1px solid;
+    border-radius:40px;
+    background-color: rgb(202, 179, 183);
+}
+input{
+    width: 73%;
+    font: 15pc;
+}input:focus{
+    border-color: rgb(244, 244, 251);
+    outline: none;
+    box-shadow: 0 0 5px rgba(210, 174, 214, 0.5);
+}
+h3{
+    text-align: center;
+} section{
+   
+    padding-left:16px ;
+}
+.d2 input{
+    border: 3px solid ;
+    border-radius: 4px;
+    padding: 12px 20px;
+    transition: all 0.5s ease;
+}.d2 input:focus{
+    border-color: blueviolet;
+    width: 70%;
+    box-shadow: 0 0 8px 0 rgba(0,0,255,0.2);
+}textarea{
+    width: 70%;
+    height: 100px;
+    font-size: 16px;
+    color: blueviolet;
+    padding: 15px;
+    border: 2px solid;
+} textarea:focus{
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.5);
+}.d4{
+    background-color: #f0f0f0;
+    height: 50px;
+    padding: 20px;
+}label{
+    font-size: 15px;
+}#s{
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}#s:focus{
+border-color: #007bff;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} fieldset {
+    padding: 10px;
+    }
+    legend {
+    font-weight: bold;
+    color: #0F8D0F;
+    margin-bottom: 10px;
+    }
+    input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+   

@@ -1,0 +1,43 @@
+header{
+    background-image: url(/im1.jpg);
+    background-repeat: no-repeat;
+
+}.p0{
+    color: white;
+}.p1{
+    background-image: url(/im2.jpg);
+}.solid{
+ border-style: solid;
+ background-color: aqua;
+ border-color: darkgreen;
+}
+.dotted{
+    border-style: dotted;
+    border-width: 10px;
+    background-color: rgb(95, 117, 190);
+}.groove{
+    border-style: groove;
+    border-width: 12px;
+    border-color: blue;
+    background-color: rgb(111, 64, 140);
+}
+.c1{
+    border: 10px groove transparent;
+    padding: 15px;
+    border-width: 15px;
+    background-color: bisque;
+    border-image: url(/im2.jpg) 50 stretch;
+}
+p.jj{
+    border: beige;
+    border-width: 9px;
+}
+.b2{
+    text-shadow: 5px 5px pink;
+}.d1{
+width: 300px;
+height: 100px;
+padding: 15px;
+background-color: cadetblue;
+box-shadow: 10px 10px;
+}

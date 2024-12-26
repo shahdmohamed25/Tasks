@@ -1,0 +1,33 @@
+body{
+    background-color: pink;
+}
+.container{
+    background-color: white;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+    border-radius: 5px;
+}h1{
+    
+    color: pink;
+}
+li{
+    color: pink;
+    font-size: 20px;
+}.t1{
+    border-color: pink;
+    background-color: white;
+    color: pink;
+    border-radius: 5px;
+}input{
+    padding: 7px;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    background-color: pink;
+    border-color: pink;
+    box-sizing: border-box;
+    
+
+}

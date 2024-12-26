@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <h1>JavaScript Width And Height</h1>
+ <p id="demo"></p>
+ <hr><hr>
+ <form>
+    <input type="button" onclick="clickevent()" value="Who's this?"/>
+    </form>
+    <hr><hr>
+    <p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+    <hr><hr>
+    <h2> Enter something here</h2>
+ <input type="text" id="input1" onfocus="focusevent()"/>
+ <br>
+ <h2>JavaScript For Loop</h2>
+ <br>
+
+ <script>
+ var demo = document.getElementById('demo');
+ let w = window.innerWidth;
+ let h = window.innerHeight;
+ demo.innerHTML = 'width: ' + w + '<br>' + 'height: ' + h +'<br>';
+ function clickevent()
+ {
+ document.write("This is Java*******point");
+ }
+ function mouseoverevent()
+ {
+ alert("This is Java******point");
+ }
+ function focusevent()
+ {
+ document.getElementById("input1").style.background="pink";
+ }
+ let text = "";
+ i = 5;
+for (i = 0; i < 6; i++) {
+ text += "The number is " + i + "<br>";
+}
+document.write(text);
+document.write(i);
+ </script>
+ 
+</body>
+</html>

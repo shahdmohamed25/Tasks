@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        div{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(101, 45, 45);
+    color: white;
+            }
+        #myid{
+            transform: skewX(-20deg);
+        }#div2{
+            margin-top: 140px;
+            transform: rotateZ(90deg);
+            margin-bottom: 200px;
+        }#div3{
+            margin-top: 140px;
+            transform: rotatez(70deg);
+            margin-bottom: 200px;
+        }#div4{
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        transition: width 2s,height 4s;
+        }#div4:hover{
+            width: 300px;
+            height: 300px;
+        }#div5{
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        transition: width 2s,height 4s;
+        }#div5:hover{
+            background: black;
+            width: 300px;
+            height: 300px;
+        }
+        #div6{
+        transition: 1s;
+        margin-bottom: 1250px;
+        }#div6:hover{
+            transform: scale(50%);
+        }#div7{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: example;
+            animation-duration: 4s;
+
+        }@keyframes example{
+            from{background-color: blue;}
+            to{
+                background-color: black;
+            }
+        }
+        
+        
+        .loader{
+            margin: auto;
+            border: 10px solid gray;
+            border-radius: 50%;
+            border-top: 10px solid #ab3636;
+            border-bottom: 10px solid #ab3636;
+            background: transparent;
+            width: 200px;
+            height: 200px;
+            animation: spinner 1s linear infinite;
+
+        }@keyframes spinner{
+            0%{transform: rotate(0deg); background-color: rgb(134, 97, 146);}
+            25%{
+                background-color: blue;}
+                50%{background-color: blueviolet;}
+            100%{transform: rotate(360deg);
+                
+}
+}
+.red {
+ color: red;
+}
+    .center {
+ text-align: center;
+ color: rgb(104, 171, 231);
+} 
+
+    </style>
+   </head>
+<body>
+    
+    <div>this is normal div</div>
+    <hr>
+    <div id="myid">this div is skewed 20 gedrees along x-axis</div>
+     <hr>
+    <div id="div2">rotate by 90 degrees</div>
+    <hr>
+    <div>this is normal div</div>
+    <div id="div3">rotate by 90 degrees</div>
+    <hr>
+    <p>transition effect 1</p>
+    <div id="div4"></div>
+    <hr>
+    <p>transition effect 2</p>
+    <div id="div5"></div>
+    <hr>
+    <p>transition effect 3</p>
+    <div id="div6">
+        <img src="im34.jpg" alt="">
+    </div>
+    <hr>
+    <div id="div7"></div>
+    <hr>
+    <div id="div8"></div>
+    <hr>
+    <div id="div9"></div>
+    <hr>
+    
+    <div class="loader"></div>
+    <hr><hr><hr>
+    <p class=" center red">I'm using both classes red and center</p>
+
+</body>
+</html>

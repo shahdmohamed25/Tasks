@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fruits lists</h1>
+        <ul>
+            <li>Apples</li>
+            <li>Banana</li>
+        </ul>
+        <input type="text" class="t1" placeholder="Enter a fruit name">
+        <br>
+        <input type="button" class="btn" value="Add to the list">
+    </div>
+    <script>
+        let add=document.querySelector(".btn");
+        let ip = document.querySelector(".t1");
+        let list=document.querySelector("ul");
+        add.onclick= function(){
+        let item =document.createElement("li");
+        item.appendChild(document.createTextNode(`${ip.value}`))
+        list.appendChild(item);
+}
+    </script>
+</body>
+</html>

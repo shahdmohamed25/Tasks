@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript DOM Manipulation</h1>
+    <h3 id="p1">Original Text Content</h3>
+    <button id="b1" >Update content</button>
+    <h3 id="p2">Original Text Content</h3>
+    <button id="b2" >Update content and styles</button>
+    <h3 style="color: red; " id="p3">Original Text Content</h3>
+    <button id="b3">Remove content</button>
+  </div> 
+  <script>
+    let x=document.querySelector('#b1');
+    x.addEventListener('click', function(){
+    const e=document.getElementById('p1');
+    e.textContent="shahd & roaa";
+    e.style.color="green";
+    
+    })
+    let y=document.querySelector('#b2');
+    y.addEventListener('click', function(){
+        const e1=document.getElementById('p2');
+    e1.textContent="shahd & roaa";
+    e1.style.color="green";
+    e1.style.border="black";
+    e1.style.background="yellow";
+    console.log("jhbvhjfbv")
+    
+    })
+    let z=document.querySelector('#b3');
+    z.addEventListener('click', function(){
+        const e1=document.getElementById('p3');
+        e1.remove();})
+
+  </script> 
+</body>
+</html>

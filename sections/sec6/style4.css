@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+.container{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.calculator{
+    position: relative;
+    height: auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#result {
+    margin-bottom: 15px;
+    width: 94%;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    line-height: 50px;
+    padding: 10px;
+    background-color: #222222;
+    color: #6f726c;
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    height: 60px;
+    width: 78px;
+    border-radius: 5px;
+    border: 0;
+    margin: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 100ms ease;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: white;
+   }
+  
+button:hover{
+filter: brightness(80%);}
+ button:active{
+    transform: scale(0.9);
+ } 
+ .operator {
+    background-color:#f5a623;
+    font-size: 30px;
+    
+}#o{
+    font-size: 40px;
+}
+.number{
+    background-color: #555555;
+}
+#equal{
+    background-color: #4caf50;
+
+}#clear{
+    background-color: #d9534f;
+    width: 345px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:400px) {
+    .calculator{
+        width: 80vw;
+     
+    }
+    h1{
+        display: none;
+    }
+    #result{
+        font-size: 18px; 
+        width: 89%;
+        
+    }.buttons{
+        grid-gap: 5px; 
+    }
+    button{
+        font-size: 16px;
+        height: 16vw;
+        width: 16vw;
+    }#clear{
+        width: 260px;
+    }
+  
+    
+}
+@media screen and (min-width:335px) and (max-width:400px){
+    #clear{
+        width: 270px;
+    }
+}

@@ -1,0 +1,29 @@
+body{
+    background-color: cornflowerblue;
+}
+.container{
+    background-color: white;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+    border-radius: 5px;
+}
+h1{
+    color:cornflowerblue ;
+    text-align: center;
+}input{
+    border-color: cornflowerblue;
+    margin-top: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+}.t{
+    background-color: white;
+    border-color: cornflowerblue;
+    border-radius: 5px;
+    color: cornflowerblue;
+}

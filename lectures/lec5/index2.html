@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.animate{
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ position: relative;
+ animation-name: example;
+ animation-duration: 4s;
+ animation-delay: 2s;
+}
+@keyframes example {
+ 0% {background-color:red; left:0px; top:0px;}
+ 25% {background-color:yellow; left:100px; top:0px;}
+ 50% {background-color:blue; left:100px; top:100px;}
+ 75% {background-color:green; left:0px; top:100px;}
+ 100% {background-color:red; left:0px; top:0px;}
+}
+.animate2 {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ position: relative;
+ animation-name: example2;
+ animation-duration: 4s;
+ animation-delay: 2s;
+ animation-iteration-count: 3;
+}
+@keyframes example2 {
+ 0% {background-color:red; left:0px; top:0px;}
+ 25% {background-color:yellow; left:200px; top:0px;}
+ 50% {background-color:blue; left:200px; top:200px;}
+ 75% {background-color:green; left:0px; top:200px;}
+ 100% {background-color:red; left:0px; top:0px;}
+}
+.in{    margin-top: 200px;}
+input {
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ padding: 12px 20px;
+ transition: all 0.9s ease;
+ }
+ input:focus {
+ border-color: dodgerblue;
+ width: 70%;
+ box-shadow:
+ 0 0 8px 0 rgba(0, 0, 255, 0.2);
+ 
+ } label {
+ font-size: 16px;
+ }
+ #styled-select {
+ width: 200px;
+ padding: 10px;
+ font-size: 16px;
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ }
+ #styled-select:focus {
+ border-color: #007BFF;
+ box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+ outline: none;
+ }
+</style>
+</head>
+<body>
+<h1>CSS Animation</h1>
+<div class="animate"></div>
+<hr><hr><hr>
+<div class="animate2"></div>
+<hr><hr><hr>
+<div class="in">
+<h2>Animated Input Field</h2>
+<input type="text" placeholder="Enter your text...">
+<hr><hr><hr>
+<label> Choose an option: </label>
+ <select id="styled-select">
+ <option value="option1">Option 1</option>
+ <option value="option2">Option 2</option>
+ <option value="option3">Option 3</option> </select>
+</div>
+
+</body>
+</html>

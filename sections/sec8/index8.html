@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .container{
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: cadetblue;
+            
+        }
+        h1{
+            margin-top: 0;
+        }
+        #t1{
+            margin-bottom: 30px; width: 100%; font-size: 30px;
+        }
+        #b1{
+            width: 100%;
+            font-size: 30px;
+        }#out{
+            border: 2px solid;
+            box-sizing: border-box;
+            height: 30px;
+            margin-top: 30px;
+            background-color: white;
+            font-size: 30px;
+        }
+        .container2{
+            width: 300px;
+            height: auto;
+            border: 2px solid;
+            padding: 50px;
+            
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(219, 123, 142); 
+        }    #t2{
+            margin-bottom: 30px; width: 100%;
+            font-size: 30px;
+        }  #b2{
+            width: 100%; font-size: 30px;
+        }#s{
+            width: 100%;
+            margin-bottom:30px ; font-size: 30px;
+        }#out2{
+            border: 2px solid;
+            height: auto;
+            margin-top: 30px;
+            background-color: white;
+        }.container3{
+            box-sizing: border-box;
+            width: 400px;
+            height: auto;
+            border: 2px solid;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto; 
+            background-color: cadetblue;
+        }
+        #b3{
+            width: 100%;
+            margin-top: 30px;
+            font-size: 30px;
+        } #t3{
+            margin-bottom: 30px; width: 100%;
+            height: 30px;
+        } #out3{
+            border: 2px solid;
+            height: 30px;
+            margin-top: 30px;
+            background-color: white;
+        }.container4{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(219, 123, 142);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate grade</h1>
+        <input type="text" name="" id="t1">
+        <br>
+        <button id="b1" onclick="output()">button</button>
+        <div id="out"></div>
+    </div>
+<hr>
+<div class="container2">
+    <input type="text" name="" id="t2">
+    <br>
+    <select name="" id="s">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </select> <br>
+    <button id="b2"onclick="multiply()">button</button>
+    <div id="out2"></div>
+
+</div><hr>
+<div class="container3">
+    <input type="text" name="" id="t3">
+    <br>
+    <button id="b3" onclick="invert()">button</button>
+    <br><div id="out3"></div>
+</div>
+<hr>
+<div class="container4" id="d4" onmouseover="mouseover()" onmouseout="mouseout()">
+   <p id="p" onmouseover="mouseover()" onmouseout="mouseout()">shahd*</p> 
+</div>
+    <script>
+
+     let result = document.getElementById("out");
+    let btn=document.getElementById('b1').addEventListener("click",output);
+    function output(){
+        let n = document.getElementById("t1");
+        let m = n.value;
+        if(m<0||m>100){result.textContent="Error";
+            }
+            else if(m>90){result.textContent="A";}
+         else if(m>70){result.textContent="B";}
+            else if(m>60){result.textContent="C";}
+            else if(m<50){result.textContent="F";}
+        
+        }
+     
+        let result2=document.getElementById("out2");
+        let btn2=document.getElementById('b2');
+        function multiply(){
+         
+            console.log("hello");
+        let x= document.getElementById("t2");
+        let y = x.value;
+        let d=document.getElementById("s");
+        let z = d.value;
+        let t= "";
+        result2.innerHTML = ""; // to remove the previous table and display the new one only when the button pressed again
+        for(var i=1;i<=z;i++){
+         result2.innerHTML+=y+"*"+i+"="+y*i+"<br>" ;  
+        }}
+
+        let result3=document.getElementById("out3");
+        
+        let btn3=document.getElementById('b3').addEventListener("click",invert);
+        let p= document.getElementById("t3");
+        function invert(){
+            let stri ="";
+            console.log("hello");
+            for(let i = p.value.length-1;i>=0;i--){
+                stri+=p.value[i];
+            }result3.innerHTML=stri;
+        }
+        let dd =document.getElementById('d4');
+        let pp = document.getElementById('p');
+        function mouseover(){
+            pp.style.clear;
+            pp.innerHTML="shahoda";
+            dd.style.backgroundColor="pink";   
+        }  
+        function mouseout() {
+            pp.style.clear;
+            pp.innerHTML = "shahd"; // Replace with your original text
+            dd.style.backgroundColor = "rgb(130, 215, 243)"; // Revert to the original background color
+        }
+    </script>
+</body>
+</html>

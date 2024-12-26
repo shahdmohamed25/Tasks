@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sec4</title>
+  </head>
+  <style>
+    body{
+        padding: 100px;
+        padding-top: 0px;
+    }
+    p {
+      width: 350px;
+      border: 1px solid black;
+    }
+
+    span {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      border: 5px solid black;
+      padding: 10px;
+      margin: 10px;
+      background-color: rgb(47, 106, 255);
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+      }
+
+      .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .column1 {
+        /* width takes 20% of the flex container */
+        width: 20%;
+        background-color: orange;
+      }
+
+      .column2 {
+        /* width takes 60% of the flex container */
+        width: 60%;
+        background-color: yellow;
+      }
+
+      .column3 {
+        /* width takes 20% of the flex container */
+        width: 20%;
+        background-color: greenyellow;
+      }
+
+      header,
+      footer {
+        background-color: pink;
+        text-align: center;
+      }
+      div.container {
+        display: grid;
+
+        /* column-1, column-2, column-3 */
+        grid-template-columns: minmax(auto, 80%) 1fr 3em;
+
+        /* row-1, row-2, row-3 */
+        grid-template-rows: 1fr 1fr 3fr;
+
+        width: 400px;
+        border: 2px solid black;
+        background-color: rgb(120, 85, 141);
+        padding: 12px;
+      }
+
+      
+      div.item {
+        border: 1px solid black;
+        background-color: rgb(247, 242, 205);
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+      ul.list{
+        display: flex;
+        background-color: rgb(193, 182, 234);
+        padding: 0px;
+      }
+
+      li {
+        background-color: rgb(179, 217, 246);
+        border: 1px solid black;
+        padding: 12px;
+        margin: 8px;
+        list-style: none;
+      }
+  </style>
+  <body>
+    <h1>CSS Box Model</h1>
+    <p>
+      The box model works differently for inline elements. For example, this
+      <br />
+      <span>span</span> element does not work as expected.
+    </p>
+    <hr><hr>
+    <header>HEADER</header>
+    <main>
+      <div class="column column1">
+        <p>COLUMN 1</p>
+      </div>
+      <div class="column column2">
+        <p>COLUMN 2</p>
+      </div>
+      <div class="column column3">
+        <p>COLUMN 3</p>
+      </div>
+    </main>
+    <footer>FOOTER</footer>
+    <hr><hr>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">
+          The first column track has a minimum size of auto. This means that the
+          minimum size it will take is to fit the content. Its maximum size of 50%
+          will prevent it from getting wider than 50% of the grid container width.
+        </div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+      </div>
+      <hr><hr>
+      <ul class="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+        <li>Blogs</li>
+        <li>Contact</li>
+      </ul>
+  </body>
+</html>

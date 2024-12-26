@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temp converter</h1>
+        <h3>Enter the temperature</h3>
+        <input type="text" class="t"> <br>
+        <input type="button" class="fbtn" value="Convert to F">
+        <br>
+        <input type="button" class="cbtn" value="Convert to C">
+<div class="out"></div>
+    </div>
+    <script>
+     let f=document.querySelector(".fbtn");
+     let c=document.querySelector(".cbtn");
+     let ip=document.querySelector(".t");
+     let op=document.querySelector(".out");
+     f.onclick=function(){
+        op.innerHTML= `${ip.value} Celsius is equivalent to ${(9*ip.value/5.0)+32} Fahrenheit`;
+     }
+     c.onclick= function(){
+        op.innerHTML=  `${ip.value} Fahrenheit is equivalent to ${parseInt((5.0/9)*(ip.value - 32))} Celsius`; 
+     }
+    </script>
+</body>
+</html>

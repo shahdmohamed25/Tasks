@@ -1,0 +1,87 @@
+<html>
+<head>
+ <style>
+ form {
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-radius: 10px;
+ max-width: 300px;
+ margin: 0 auto;
+ }
+ label {
+ font-weight: bold;
+ margin-top: 10px;
+ display: block;
+ }
+ input[type="radio"],
+ input[type="checkbox"] {
+ margin-right: 5px;
+ vertical-align: middle;
+ }
+
+ /* '+' is Adjacent Sibling Selectors */
+ input[type="radio"] + label,
+ input[type="checkbox"] + label {
+ display: inline-block;
+ margin-right: 10px;
+ }
+
+ /* Change color of checked option */
+ input[type="radio"]:checked + label,
+ input[type="checkbox"]:checked + label {
+ color: #007BFF;
+ }div{display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .styled-button {
+    margin-top: 20px;
+ padding: 10px 20px;
+ font-size: 16px;
+ color: white;
+ background-color: #007BFF;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+ transition: all 0.3s;
+ }
+ .styled-button:hover {
+ background-color: #0056b3;
+ }
+ .styled-button:active {
+ transform: scale(0.5);
+ }
+ .styled-button:focus {
+ outline: none;
+ box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+ }
+ </style>
+</head>
+<body>
+ <form>
+ <label>Radio Buttons: </label>
+ <input type="radio" name="gender" value="male">
+
+ <label for="male">Male</label>
+ <input type="radio" name="gender" value="female">
+ <label for="female">Female</label>
+ <br>
+ <label>Checkboxes:</label>
+ <input type="checkbox"
+ name="lang" value="html">
+ <label for="html">HTML</label>
+ <input type="checkbox"
+ name="lang" value="css">
+ <label for="css">CSS</label>
+ <input type="checkbox"
+ name="lang" value="bootstrap">
+ <label for="html">bootstrap</label>
+ </form>
+ <div>
+    <br>
+ <button class="styled-button">
+    submit
+ </button></div>
+</body>
+</html>

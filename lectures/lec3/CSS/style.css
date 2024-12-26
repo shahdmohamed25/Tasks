@@ -1,0 +1,14 @@
+.h{
+    color: brown;
+}
+span,b{
+    font-size: 39px;
+    color: darkmagenta;
+}p{
+    font-size: 33px;
+}
+.violet{
+    color: blueviolet;
+}.paragraph{
+    text-align: center;
+}
